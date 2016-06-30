@@ -20,6 +20,10 @@ app.get('/track', function (req, res) {
 	res.sendFile(path.join(__dirname, '/track.html'));
 });
 
+app.get('/track1', function (req, res) {
+	res.sendFile(path.join(__dirname, '/track.html'));
+});
+
 app.get('/socket', function (req, res) {
 	res.sendFile(__dirname + '/index.html');
 });
