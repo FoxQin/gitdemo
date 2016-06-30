@@ -24,6 +24,10 @@ app.get('/socket', function (req, res) {
 	res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/socket1', function (req, res) {
+	res.sendFile(__dirname + '/index.html');
+});
+
 app.get('/alldrivers', function (req, res) {
 	var dateString = req.query.date;
 	data.getAllPosition(dateString, function (result) {
